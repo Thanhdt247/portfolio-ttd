@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
-// Ký hiệu SVG kỹ thuật 
+// Ký hiệu SVG kỹ thuật
 const Icons = {
   Academy: () => (
     <svg className="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,7 +34,6 @@ export default function Home() {
     { name: 'KẾT NỐI', href: '#lien-he' },
   ];
 
-  // ĐÃ CẬP NHẬT DỮ LIỆU TỪ 5 FILE PDF CỦA BẠN
   const exercises = [
     { label: 'BT 01', title: 'Máy tính & Thiết bị ngoại vi', desc: 'Thao tác tệp tin, quản lý hệ thống máy tính và các thiết bị phần cứng cơ bản.' },
     { label: 'BT 02', title: 'Sử dụng AI có trách nhiệm', desc: 'Nghiên cứu liêm chính học thuật và ứng dụng AI hỗ trợ mô phỏng Định luật Gauss trong Python.' },
@@ -43,13 +43,13 @@ export default function Home() {
     { label: 'BT 06', title: 'Đánh giá Thông tin Học thuật', desc: 'Tìm kiếm, phân loại và đánh giá độ tin cậy của 12 tài liệu nghiên cứu Python trong phân tích Big Data.' },
   ];
 
-  // Các cấu hình hiệu ứng animation
-  const fadeUpVariant = {
+  // THÊM CHỮ ": any" ĐỂ ÉP KIỂU VÀ XÓA LỖI ĐỎ CỦA TYPESCRIPT
+  const fadeUpVariant: any = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
   };
 
-  const staggerContainer = {
+  const staggerContainer: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -60,8 +60,13 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#050509] text-slate-300 font-mono overflow-hidden relative selection:bg-amber-400 selection:text-black">
       
-      {/* Background Grid Pattern */}
-      <div className="fixed inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+      <div 
+        className="fixed inset-0 opacity-[0.03] pointer-events-none" 
+        style={{ 
+          backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', 
+          backgroundSize: '40px 40px' 
+        } as React.CSSProperties} 
+      ></div>
 
       {/* ========================================================
           1. NAVBAR 
@@ -201,9 +206,9 @@ export default function Home() {
                 <h3 className="text-lg font-bold text-slate-100 mb-3 group-hover:text-white transition-colors">{ex.title}</h3>
                 <p className="text-slate-500 text-sm mb-8 flex-grow">{ex.desc}</p>
                 
-                <a href={`/bai-tap/${index + 1}`} className="flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-amber-400 transition-colors uppercase tracking-widest group">
+                <Link href={`/bai-tap/${index + 1}`} className="flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-amber-400 transition-colors uppercase tracking-widest group">
                   Phân tích chi tiết <Icons.Link />
-                </a>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
