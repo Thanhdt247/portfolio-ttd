@@ -312,8 +312,8 @@ export default function Home() {
               Bạn cần trao đổi về học thuật, dự án năng lượng hoặc cơ hội hợp tác Clean-Tech. Hệ thống luôn sẵn sàng tiếp nhận tín hiệu.
             </p>
             
-            <a href="mailto:dai.tran.uet@vnu.edu.vn" className="inline-block px-10 py-4 bg-white text-black font-bold rounded-sm hover:bg-amber-400 transition-colors shadow-lg">
-              SYSTEM_CONNECT: dai.tran.uet@vnu.edu.vn
+            <a href="mailto:25023098@vnu.edu.vn" className="inline-block px-10 py-4 bg-white text-black font-bold rounded-sm hover:bg-amber-400 transition-colors shadow-lg">
+              SYSTEM_CONNECT: 25023098@vnu.edu.vn
             </a>
           </div>
         </motion.section>
