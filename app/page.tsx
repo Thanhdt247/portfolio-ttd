@@ -61,7 +61,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#050509] text-slate-300 font-mono overflow-hidden relative selection:bg-amber-400 selection:text-black">
       
       {/* Background Grid Pattern */}
-      <div className="fixed inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', bgSize: '40px 40px' }}></div>
+      <div className="fixed inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
       {/* ========================================================
           1. NAVBAR 
