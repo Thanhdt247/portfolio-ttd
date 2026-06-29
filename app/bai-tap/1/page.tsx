@@ -38,7 +38,7 @@ export default function Exercise1() {
             </span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight tracking-tighter">
-            MÁY TÍNH VÀ THIẾT BỊ NGOẠI VI
+            THAO TÁC CƠ BẢN VỚI TỆP TIN VÀ THƯ MỤC
           </h1>
           <div className="flex flex-wrap items-center gap-6 text-xs text-slate-500 border-b border-slate-800 pb-8 mb-12 font-bold tracking-widest">
             <span>// AUTHOR: TRẦN TRỌNG ĐẠI</span>
@@ -54,10 +54,24 @@ export default function Exercise1() {
           <section>
             <h2 className="text-xl font-bold text-white mb-6 uppercase tracking-widest flex items-center gap-3">
               <span className="w-2 h-2 bg-cyan-400"></span> 
-              I. Tóm tắt nội dung
+              I. Tóm tắt nội dung thực hành
             </h2>
             <div className="bg-[#0a0a12] border border-slate-800 p-6 md:p-8 space-y-4">
-              <p>Phần này bạn có thể cập nhật thêm thông tin tóm tắt dựa vào file bài làm thực tế của Đại. Hiện tại hệ thống đang kết nối trực tiếp đến báo cáo PDF để hiển thị nguyên bản.</p>
+              <p className="mb-4 text-slate-300">Bài thực hành bao gồm các thao tác cơ bản sau trên hệ điều hành Windows:</p>
+              <ul className="list-decimal pl-5 space-y-3 text-slate-400">
+                <li><strong className="text-slate-200">Mở File Explorer:</strong> Nhấn tổ hợp phím Windows + E hoặc nhấp vào biểu tượng thư mục.</li>
+                <li><strong className="text-slate-200">Truy cập ổ đĩa/thư mục:</strong> Vào This PC, nhấp đúp vào ổ đĩa không phải hệ thống (VD: D: hoặc E:) hoặc thư mục Documents.</li>
+                <li><strong className="text-slate-200">Tạo thư mục mới:</strong> Nhấp chuột phải vào khoảng trống {'->'} chọn New {'->'} Folder. Đặt tên thư mục là ThucHanh_TranTrongDai.</li>
+                <li><strong className="text-slate-200">Vào thư mục:</strong> Nhấp đúp vào thư mục vừa tạo.</li>
+                <li><strong className="text-slate-200">Tạo tệp tin văn bản:</strong> Nhấp chuột phải {'->'} New {'->'} Text Document. Đặt tên là GhiChu.txt.</li>
+                <li><strong className="text-slate-200">Đổi tên tệp tin:</strong> Nhấp chuột phải vào tệp {'->'} chọn Rename. Đổi tên thành GhiChuQuanTrong.txt.</li>
+                <li><strong className="text-slate-200">Tạo thư mục con:</strong> Nhấp chuột phải {'->'} New {'->'} Folder. Đặt tên là TaiLieu.</li>
+                <li><strong className="text-slate-200">Sao chép tệp tin (Copy & Paste):</strong> Nhấp chuột phải vào tệp {'->'} Copy (hoặc Ctrl + C). Vào thư mục TaiLieu, chọn Paste (hoặc Ctrl + V).</li>
+                <li><strong className="text-slate-200">Di chuyển tệp tin (Cut & Paste):</strong> Tạo tệp DiChuyen.txt, chọn Cut (hoặc Ctrl + X). Vào thư mục TaiLieu, chọn Paste (hoặc Ctrl + V).</li>
+                <li><strong className="text-slate-200">Xóa tệp tin:</strong> Nhấp chuột phải vào tệp {'->'} chọn Delete. Tệp sẽ được chuyển vào Thùng rác (Recycle Bin).</li>
+                <li><strong className="text-slate-200">Xóa vĩnh viễn:</strong> Chọn tệp, nhấn giữ phím Shift + Delete. Tệp sẽ bị xóa mà không qua Thùng rác.</li>
+                <li><strong className="text-slate-200">Khôi phục từ Thùng rác (Restore):</strong> Mở Recycle Bin, nhấp chuột phải vào tệp đã xóa và chọn Restore để đưa tệp về vị trí cũ.</li>
+              </ul>
             </div>
           </section>
 
@@ -71,7 +85,6 @@ export default function Exercise1() {
               <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-amber-400"></div>
               <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-amber-400"></div>
               
-              {/* Đảm bảo bạn đã chép file lesson1.pdf vào thư mục public/lesson/ */}
               <iframe 
                 src="/lesson/lesson1.pdf" 
                 className="w-full h-full border-none rounded-sm"
