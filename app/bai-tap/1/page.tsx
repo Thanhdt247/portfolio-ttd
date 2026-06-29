@@ -127,7 +127,7 @@ export default function Exercise1() {
               
               {/* Lưu ý: Bạn cần đảm bảo file ThucHanh_TranTrongDai.pdf nằm trong thư mục public/lesson/ */}
               <iframe 
-                src="/lesson/lesson6.pdf" 
+                src="/lesson/lesson1.pdf" 
                 className="w-full h-full border-none rounded-sm"
                 title="Báo cáo Bài tập 1 - Trần Trọng Đại"
               />
